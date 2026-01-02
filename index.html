@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Guarino - Studente & Sviluppatore IT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Effetto particelle di sfondo -->
+    <div id="particles-js"></div>
+    
+    <!-- Effetto luce che segue il mouse -->
+    <div class="mouse-light"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-text="A.G.">A.G.</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link"><span data-text="Home">Home</span></a></li>
+                <li><a href="#about" class="nav-link"><span data-text="Chi Sono">Chi Sono</span></a></li>
+                <li><a href="#skills" class="nav-link"><span data-text="Competenze">Competenze</span></a></li>
+                <li><a href="#projects" class="nav-link"><span data-text="Progetti">Progetti</span></a></li>
+                <li><a href="#contact" class="nav-link"><span data-text="Contatti">Contatti</span></a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sezione Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title glitch" data-text="Andrea Guarino">Andrea Guarino</h1>
+                <div class="typewriter-container">
+                    <p class="hero-subtitle typewriter"></p>
+                </div>
+                <p class="hero-description">Trasformo idee in soluzioni digitali innovative con un focus sulla sicurezza e le infrastrutture cloud.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary magnetic" data-strength="0.3">
+                        <span>Vedi i miei progetti</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline magnetic" data-strength="0.2">
+                        <span>Contattami</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="profile-image">
+                                <div class="image-container">
+                                    <img src="amongus.jpg" alt="Andrea Guarino" class="profile-photo">
+                                </div>
+                                <div class="tech-icons">
+                                    <i class="fab fa-docker"></i>
+                                    <i class="fab fa-python"></i>
+                                    <i class="fab fa-linux"></i>
+                                    <i class="fas fa-server"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Disponibile per collaborazioni</h3>
+                                <p>Progetti innovativi & consulenze IT</p>
+                                <div class="status-indicator">
+                                    <div class="pulse-dot"></div>
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione About -->
+    <section class="section about" id="about">
+        <div class="section-header">
+            <h2 class="section-title"><span class="highlight">//</span> Chi Sono</h2>
+            <p class="section-subtitle">La mia storia e passione per la tecnologia</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Ciao, sono Andrea, uno studente IT con 5 anni di esperienza in ambito IT e sviluppo software.</p>
+                <p>La mia passione per la tecnologia è iniziata da bambino smontando computer e avvicinandomi al mondo IT. Oggi mi occupo di sviluppo e infrastrutture DevOps, dalla progettazione di applicazioni alla gestione di server e containerizzazione.</p>
+                <p>Credo fermamente nell'apprendimento continuo e nell'esplorazione di nuove tecnologie per risolvere problemi complessi in modi eleganti ed efficienti.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-year="2020">
+                        <h4>Diploma di scuola superiore</h4>
+                        <p>Liceo scientifico (scienze applicate IT) G. Cotta</p>
+                    </div>
+                    <div class="timeline-item" data-year="2020">
+                        <h4>Sviluppatore Freelance</h4>
+                        <p>Inizio lavori su commissione privati + hosting</p>
+                    </div>
+                    <div class="timeline-item" data-year="2022">
+                        <h4>Full Stack Developer</h4>
+                        <p>Sviluppo software per utenti privati, studi e aziende</p>
+                    </div>
+                    <div class="timeline-item" data-year="2025">
+                        <h4>Diploma superiore (EQF V) ITS IT Specialist</h4>
+                        <p>Lavoro per aziende IT (attualmente RTC S.P.A)</p>
+                    </div>
+                    <div class="timeline-item" data-year="2025- ">
+                        <h4>Sys-DevOps</h4>
+                        <p>Approccio serio con vari sistemi di virtualizzazione e lavoro diretto su server (Swarovski - Giunti al punto)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Progetti Completati</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Clienti Soddisfatti</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Anni Esperienza</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Certificazioni</div>
+                    </div>
+                </div>
+                <div class="hologram-effect">
+                    <div class="hologram-content">
+                        <h4>Filosofia di lavoro</h4>
+                        <p>"Lavoro con attenzione ai dettagli, sicurezza e performance. Ogni progetto è un'opportunità per imparare e migliorare."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Skills -->
+    <section class="section skills" id="skills">
+        <div class="section-header">
+            <h2 class="section-title"><span class="highlight">//</span> Competenze Tecniche</h2>
+            <p class="section-subtitle">Tecnologie e strumenti che utilizzo</p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="devops">DevOps</button>
+                    <button class="tab-btn" data-category="sviluppo">Sviluppo</button>
+                    <button class="tab-btn" data-category="tools">Strumenti</button>
+                    <button class="tab-btn" data-category="security">Sicurezza</button>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skills-category active" id="devops">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker & Containerizzazione</span>
+                                <span class="skill-percentage" data-percent="95">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes (k3s, k8s)</span>
+                                <span class="skill-percentage" data-percent="80">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Server Linux Administration</span>
+                                <span class="skill-percentage" data-percent="90">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD Pipelines</span>
+                                <span class="skill-percentage" data-percent="85">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category" id="sviluppo">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Django</span>
+                                <span class="skill-percentage" data-percent="90">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / Vue.js</span>
+                                <span class="skill-percentage" data-percent="85">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Database SQL & NoSQL</span>
+                                <span class="skill-percentage" data-percent="85">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">API Design & REST/GraphQL</span>
+                                <span class="skill-percentage" data-percent="88">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-visual">
+                <div class="tech-sphere" id="tech-sphere">
+                    <!-- Tecnologie verranno aggiunte via JS -->
+                </div>
+                <div class="sphere-controls">
+                    <button class="sphere-btn" id="rotate-sphere">
+                        <i class="fas fa-sync-alt"></i> Ruota Sfera
+                    </button>
+                    <button class="sphere-btn" id="explode-sphere">
+                        <i class="fas fa-expand-alt"></i> Esplodi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Progetti -->
+    <section class="section projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title"><span class="highlight">//</span> Progetti</h2>
+            <p class="section-subtitle">Alcuni dei miei lavori più significativi</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-overlay"></div>
+                    <div class="project-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">K3s</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Infrastruttura grande azienda (10k + dipendenti)</h3>
+                    <p class="project-description">Aggiornamento e ristrutturazione dei server con webapp principale e database MySQL in cluster Kubernetes.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-lock"></i> Codice Privato
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-server"></i> Infrastruttura
+                        </a>
+                    </div>
+                </div>
+                <div class="project-hover-effect"></div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-overlay"></div>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sistema Gestione Dati Legali</h3>
+                    <p class="project-description">Applicazione per la gestione di dati sensibili per studio legale con crittografia end-to-end.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Codice
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-hover-effect"></div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-overlay"></div>
+                    <div class="project-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Arduino</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sistema GPS Offline</h3>
+                    <p class="project-description">Sistema GPS completamente offline e open-source con ricevitore/trasmettitore hardware e visualizzazione su mappa dockerizzata.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Codice
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-hover-effect"></div>
+            </div>
+        </div>
+        
+        <div class="projects-cta">
+            <p>Vuoi vedere altri progetti o collaborare insieme?</p>
+            <a href="#contact" class="btn btn-primary magnetic" data-strength="0.3">
+                <span>Parliamone</span>
+                <i class="fas fa-comment-dots"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section class="section contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title"><span class="highlight">//</span> Contattami</h2>
+            <p class="section-subtitle">Parliamo del tuo prossimo progetto</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <p>andrea.guarino2002@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Telefono</h4>
+                        <p>+39 3494088329</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/andreaguarino</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>GitHub</h4>
+                        <p>github.com/andreaguarino12</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Nome Completo</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" ">
+                        <label for="subject">Oggetto</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Messaggio</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary magnetic" data-strength="0.4">
+                        <span>Invia Messaggio</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-symbol">AG</div>
+                <p>Studente IT & Sys-DevOps</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">Chi Sono</a>
+                <a href="#skills">Competenze</a>
+                <a href="#projects">Progetti</a>
+                <a href="#contact">Contatti</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://github.com/andreaguarino12" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-docker"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-python"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Andrea Guarino. Tutti i diritti riservati.</p>
+            <p class="footer-credits">Sito realizzato con <i class="fas fa-heart"></i> e <i class="fas fa-code"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
